@@ -1,0 +1,11 @@
+# Use an existing docker image
+FROM alpine
+
+
+# Download dependencies
+
+RUN apk add --update redis
+
+# Processing at time of starting
+
+CMD ["redis-server"]
